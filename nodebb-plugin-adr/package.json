@@ -1,0 +1,17 @@
+{
+  "name": "nodebb-plugin-adr",
+  "version": "1.0.0",
+  "description": "A full-featured RPG plugin for NodeBB - Anime Dungeon Raids",
+  "main": "library.js",
+  "license": "GPL-2.0",
+  "keywords": [
+    "nodebb",
+    "nodebb-plugin",
+    "rpg",
+    "game"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {}
+}

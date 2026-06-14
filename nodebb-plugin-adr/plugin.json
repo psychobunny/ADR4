@@ -1,0 +1,22 @@
+{
+  "id": "nodebb-plugin-adr",
+  "name": "ADR - Anime Dungeon Raids",
+  "description": "A full-featured RPG plugin for NodeBB. Create characters, fight monsters, craft equipment, manage shops, and more.",
+  "version": "1.0.0",
+  "url": "",
+  "library": "./library.js",
+  "templates": "./templates",
+  "staticDirs": {
+    "adr/assets": "./public"
+  },
+  "less": [],
+  "scripts": [
+    "public/js/adr.js"
+  ],
+  "hooks": [
+    { "hook": "static:app.load",               "method": "init" },
+    { "hook": "filter:admin.header.build",      "method": "adminBuildHeader" },
+    { "hook": "filter:post.content",            "method": "addCharacterCardToPost" },
+    { "hook": "action:user.create",             "method": "onUserCreate" }
+  ]
+}
